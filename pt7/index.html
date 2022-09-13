@@ -1,0 +1,28 @@
+<html>
+    <body>
+        <input id="name-input" type="text" placeholder="Enter your name" />
+        <!--This gives an input box that accepts text. In the box, it asks for your name-->
+        <button id="my-button">Click Me</button>
+        <!--This just adds a button that you can click, that says "Click Me" on it-->
+
+        <script>
+        //This just says to start using javascript for the following code
+        var myButton = document.querySelector('#my-button');
+        // Creates a new variable that's called myButton
+        var nameInput = document.querySelector('#name-input');
+        // Creates a new variable that's called nameInput
+        // Both of them are linked to the name input and button created before, and will caputre the last
+        // created input
+        myButton.addEventListener('click', function () {
+            //Waits for myButton to register a specific input, and then tells it to do a function when
+            //the button recieves the input. In this case, the input is when the button is clicked
+            if (nameInput.value !== '') {
+                //Checks if the name entered exists
+            alert('Hello ' + nameInput.value);
+            //Creates a popup box that says "Hello ", and then the name that was inputted
+            }
+        });
+        </script>
+        <!--Ends the usage of JavaScript-->
+    </body>
+</html>
